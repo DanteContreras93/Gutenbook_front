@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    font-family: "Lato", sans-serif
+}
+
+fieldset {
+    margin: 2em;
+    padding: 1em 2em;
+    border: solid 2px rgb(132, 182, 246);
+    border-radius: 6px;
+    width: 30%;
+    min-width: 200px;
+}
+
+legend {
+    font-size: 1.75em;
+    padding: 0 .25em;
+    color: rgb(132, 182, 246);
+}
+
+label, .checks {
+    display: block;
+    padding-top: .5em;
+    margin-top: 1em;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+input {
+    padding: .5em;
+}
+
+textarea {
+    min-height: 8em;
+    min-width: 16em;
+    padding: .5em;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+input[type="submit"] {
+    margin-top: 2em;
+    padding: .25em;
+    display: block;
+}
+
+h1 {
+    font-size: 1.50em;
+    padding: 0.25em 0.25em 0.25em 0.25em;
+    color: rgb(0, 0, 0);
+}
+
+hr {
+    height: 2px;
+    border-width: 0;
+    color: rgb(132, 182, 246);
+    background-color: rgb(132, 182, 246)
+}
