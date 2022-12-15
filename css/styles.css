@@ -117,6 +117,12 @@ nav .content .links{
   display: none;
 }
 
+.section{
+  background-color: green;
+  width: 90%;
+  margin: auto;
+
+}
 /* Dropdown Menu code start */
 .content .links ul{
   position: absolute;
@@ -150,6 +156,7 @@ nav .content .links{
   top: 0;
 }
 
+
 /* Responsive code start */
 @media screen and (max-width: 1250px){
   .wrapper nav{
@@ -167,6 +174,12 @@ nav .content .links{
   }
   .wrapper .search-box input{
     padding: 0 100px 0 15px;
+  }
+  .section{
+    background-color: green;
+    width: 90%;
+    margin: auto;
+  
   }
 }
 
@@ -232,6 +245,12 @@ nav .content .links{
     line-height: 30px;
     border-radius: 5px!important;
   }
+  .section{
+    background-color: green;
+    width: 90%;
+    margin: auto;
+  
+  }
 }
 
 @media screen and (max-width: 400px){
@@ -250,6 +269,12 @@ nav .content .links{
   }
   .wrapper .search-box input{
     padding-right: 30px;
+  }
+  .section{
+    background-color: green;
+    width: 90%;
+    margin: auto;
+  
   }
 }
 /* parte de nosotros */
