@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Gutenbook</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>Dropdown Menu with Search Box | CodingNepal</title>
+  <link rel="stylesheet" href="/css/styleNosotros.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
   <div class="wrapper">
     <nav>
@@ -16,14 +23,14 @@
       <input type="checkbox" id="show-menu">
       <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
       <div class="content">
-      <div class="logo"><a href="#">Gutenbook</a></div>
+        <div class="logo"><a href="#">Gutenbook</a></div>
         <ul class="links">
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca</a></li>
+          <li><a href="./nosotros.html">Acerca</a></li>
           <li>
             <a href="#" class="desktop-link">Géneros</a>
             <input type="checkbox" id="show-features">
-            <label for="show-features">Features</label>
+            <label for="show-features">Otro</label>
             <ul>
               <li><a href="#">Género 1</a></li>
               <li><a href="#">Género 2</a></li>
@@ -34,7 +41,7 @@
           <li>
             <a href="#" class="desktop-link">Contacto</a>
             <input type="checkbox" id="show-services">
-            <label for="show-services">Services</label>
+            <label for="show-services">Contacto</label>
             <ul>
               <li><a href="#">Contacto 1</a></li>
               <li><a href="#">Contacto 2</a></li>
@@ -62,11 +69,35 @@
     </nav>
   </div>
 
-  <div class="dummy-text">
-    <h1>Bienvenidos</h1>
-    <h2>Nosotros</h2>
-    <h2>Equipo</h2>
+  <div class="section">
+    <div class="container">
+      <div class="content-section">
+        <div class="title">
+          <h1>Gutenbook</h1>
+        </div>
+        <div class="content">
+          <h3>"Mejorando día a día para ser la mejor librería del país"</h3>
+          <p>En Gutenbook Buscamos ser una librería líder en venta y distribución de libros de texto, libros
+            de lectura en general, plataformas digitales, tanto de editoriales nacionales como extranjeras,
+            reconocida por la calidad de nuestro servicio y la contribución a la comunidad educativa.</p>
+
+          <div class="button">
+            <a href="">Contacto</a>
+          </div>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <br>
+      <div class="image-section">
+        <img src="/imagenes/equipo.jpg" alt="imagenBiblioteca">
+      </div>
+    </div>
   </div>
 
 </body>
+
 </html>
