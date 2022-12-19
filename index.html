@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Gutenbook</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>Dropdown Menu with Search Box | CodingNepal</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
   <div class="wrapper">
     <nav>
@@ -16,14 +23,14 @@
       <input type="checkbox" id="show-menu">
       <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
       <div class="content">
-      <div class="logo"><a href="#">Gutenbook</a></div>
+        <div class="logo"><a href="#">Gutenbook</a></div>
         <ul class="links">
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca</a></li>
+          <li><a href="./nosotros.html">Acerca</a></li>
           <li>
             <a href="#" class="desktop-link">Géneros</a>
             <input type="checkbox" id="show-features">
-            <label for="show-features">Features</label>
+            <label for="show-features">Otro</label>
             <ul>
               <li><a href="#">Género 1</a></li>
               <li><a href="#">Género 2</a></li>
@@ -34,7 +41,7 @@
           <li>
             <a href="#" class="desktop-link">Contacto</a>
             <input type="checkbox" id="show-services">
-            <label for="show-services">Services</label>
+            <label for="show-services">Contacto</label>
             <ul>
               <li><a href="#">Contacto 1</a></li>
               <li><a href="#">Contacto 2</a></li>
@@ -56,17 +63,141 @@
       </div>
       <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
       <form action="#" class="search-box">
-        <input type="text" placeholder="Type Something to Search..." required>
+        <input type="text" placeholder=" Buscar Libro..." required>
         <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
       </form>
     </nav>
   </div>
 
-  <div class="dummy-text">
-    <h1>Bienvenidos</h1>
-    <h2>Nosotros</h2>
-    <h2>Equipo</h2>
+  <div class="section">
+    <div class="container">
+      <div class="content-section">
+        <div class="title">
+          <h1>Gutenbook</h1>
+        </div>
+        <div class="content">
+          <h3>"Mejorando día a día para ser la mejor librería del país"</h3>
+          <p>En Gutenbook Buscamos ser una librería líder en venta y distribución de libros de texto, libros
+            de lectura en general, plataformas digitales, tanto de editoriales nacionales como extranjeras,
+            reconocida por la calidad de nuestro servicio y la contribución a la comunidad educativa.</p>
+
+          <div class="button">
+            <a href="">Contacto</a>
+          </div>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <br>
+      <div class="image-section">
+        <img src="/imagenes/equipo.jpg" alt="imagenBiblioteca">
+      </div>
+    </div>
   </div>
 
+  <div class="container">
+    <h2>Equipo de trabajo</h2>
+    <p>En Gutenbook trabajamos por ti por lo cual nos honra presentar a nuestros miembros de equipo, dando a conocer
+        un poco mas de ellos</p>
+    <br>
+
+    <!-- Left-aligned media object -->
+    <div class="media">
+        <div class="media-left">
+            <img src="/imagenes/fer_caballero_perfil1.jpg" class="media-object" style="width:100px" height="100px">
+        </div>
+        <div class="media-body">
+            <h3 class="media-heading">Tomas Fernando Caballero Bravo</h3>
+            <p>Soy ingeniero en sistemas computacionales y busco desarrollarme en el área de tecnologías de
+                información. Desde muy chico me apasiona el mundo de la programación y el aprender cosas nuevas cada
+                día. Por ello busque mas y aparte de la ingenieria en sistemas computacionales tome los cursos de LaunchX
+                de Microsoft, Innovaccion Virtual de Microsoft y Generation México, en los cuales aprendi Java
+                Fullstack y desarrollo web.
+            </p>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Right-aligned media object -->
+    <div class="media">
+        <div class="media-body">
+            <h3 class="media-heading">Dante Francisco Contreras Romero</h3>
+            <p>Desarrollador Web Fullstack, graduado de ingeniería química y maestro en ciencias. Cuento con
+                experiencia como ingeniero, liderando equipos en la demandante industria química: fibra de carbón,
+                papel y poliuretano.
+            </p>
+        </div>
+        <div class="media-right">
+            <img src="/imagenes/profile_dante_contreras.jpeg" class="media-object" style="width:100px"
+                height="100px">
+        </div>
+    </div>
+    <hr>
+    <div class="media">
+        <div class="media-left">
+            <img src="/imagenes/EmmanuelMina.jpg" class="media-object" style="width:100px" height="120px">
+        </div>
+        <div class="media-body">
+            <h3 class="media-heading">Emmanuel Minajas Carbajal</h3>
+            <p>Soy Emmanuel Minajas Carbajal, soy egresado de la carrera en ingeniería en sistemas computaciones en
+                ESCOM-IPN, Soy un apasionado de la informática, soy muy hábil en el desarrollo de programas y la
+                resolución de problemas. Actualmente en el bootcamp que estamos desarrollando me encargo de ser
+                Scrum-Máster de este proyecto el cual me permitirá mejorar mis habilidades blandas y técnicas.
+
+            </p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="media">
+        <div class="media-body">
+            <h3 class="media-heading">Dante Francisco Contreras Romero</h3>
+            <p>Desarrollador Web fullstack, ingeniero en informática por el IPN.
+                Cuento con experiencia en la busqueda y solución de errores. Apasionado de la seguridad y curioso
+                por naturaleza.
+            </p>
+        </div>
+        <div class="media-right">
+            <img src="/imagenes/profile_alberto_vazquez.jpg" class="media-object" style="width:100px" height="100px">
+        </div>
+    </div>
+    <hr>
+
+    <div class="media">
+        <div class="media-left">
+            <img src="/imagenes/Esdras.PNG" class="media-object" style="width:100px" height="100px">
+        </div>
+        <div class="media-body">
+            <h3 class="media-heading">Esdras de Jesús López Palacios</h3>
+            <p>Soy Emmanuel Minajas Carbajal, soy egresado de la carrera en ingeniería en sistemas computaciones en
+                ESCOM-IPN, Soy un apasionado de la informática, soy muy hábil en el desarrollo de programas y la
+                resolución de problemas. Actualmente en el bootcamp que estamos desarrollando me encargo de ser
+                Scrum-Máster de este proyecto el cual me permitirá mejorar mis habilidades blandas y técnicas.
+
+            </p>
+        </div>
+    </div>
+    <hr>
+
+</div>
+
+<footer>
+    <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a
+            href="#"><i class="icon ion-social-facebook"></i></a></div>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="#">Services</a></li>
+        <li class="list-inline-item"><a href="#">About</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+    </ul>
+    <p class="copyright">Company Name © 2022</p>
+</footer>
+
 </body>
+
 </html>
