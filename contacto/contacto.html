@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dropdown Menu with Search Box | CodingNepal</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -84,32 +84,35 @@
                 <div class="mb-3"><br>
                     <label  class="form-label"><h4>Nombre:</h4></label>
                     <input type="text" class="form-control" placeholder="Escribe tu nombre completo" aria-label="nombre" id="txtNombre" aria-describedby="basic-addon1">
+                    <p class = "alert_validation" id = "messageNombre">Los nombres de usuario deben tener al menos tres caracteres <br>
+                                            Y deben iniciar con una letra </p>
                   </div>
 
                   <div class="mb-3"><br>
                     <label  class="form-label"><h4>Teléfono:</h4></label>
-                    <input type="tel" class="form-control" id="txtNumber" placeholder="Escribe tu numero telefonico" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="txtNumber" placeholder="Escribe tu numero telefonico" aria-describedby="emailHelp">
+                    <p class = "alert_validation" id = "messageNumber">Por favor introduce un número telefónico válido </p>
                   </div>
 
                 <div class="mb-3"><br>
-                  <label  class="form-label"><h4>Correo Electrónico</h4></label>
-                  <input type="email" class="form-control" id="txtemail" placeholder="Escribe tu correo electrónico" aria-describedby="emailHelp">
+                  <label  class="form-label"><h4>Correo Electrónico:</h4></label>
+                  <input type="text" class="form-control" id="txtemail" placeholder="Escribe tu correo electrónico" aria-describedby="emailHelp">
+                  <p class = "alert_validation" id = "messageEmail">Por favor introduce un correo válido </p>
                 </div>
 
                 <div class="form-floating"><br>
-                  <label for="floatingTextarea2"><h4>Mensaje</h4></label>
+                  <label for="floatingTextarea2"><h4>Comentario:</h4></label>
                     <textarea class="form-control" placeholder="Escribe tu mensaje" id="txtMensaje" style="height: 100px"></textarea>
-                    </div>
+                    <p class = "alert_validation" id = "messageMensaje">Longitud mínima de mensaje 20 caracteres</p>
+                  </div>
                   <button type="submit" id="btnsubmit" class="btn btn-primary">Enviar</button>
                   </form>
-                </div>  
-                <div class="alert alert-danger fade show" role="alert" id="alertValidaciones">
-                  <p id="alertValidacionesTexto"></p>
+                </div>
+
             </div>
-            <div class="alert alert-danger" style="display:none;" role="alert" id="alertValidaciones">
-              <p id="alertValidacionesTexto"></p>
-            
-          </div>      
+
+                            
+     
         </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>

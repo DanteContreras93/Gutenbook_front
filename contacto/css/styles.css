@@ -116,11 +116,6 @@ nav .content .links{
 .wrapper input[type="checkbox"]{
   display: none;
 }
-.dummy-text{
-  font-size: 20px;
-  background-color: green;
-  overflow: clip;
-}
 
 /* Dropdown Menu code start */
 .content .links ul{
@@ -153,6 +148,12 @@ nav .content .links{
 }
 .content .links ul li:hover ul{
   top: 0;
+}
+
+.alert_validation {
+  color: red;
+  font-size: 10px;
+  display: none;
 }
 
 /* Responsive code start */
