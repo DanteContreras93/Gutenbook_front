@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 04c1d8e84ae5544fa2060c17945c10e07e4f4de4
 let txtNombre = document.getElementById("txtNombre");
 let txtemail =  document.getElementById("txtemail");
 let txtNumber = document.getElementById("txtNumber");
@@ -26,11 +23,7 @@ function validarNombre(){
 
 //valida que la entrada sea email
 function validarEmail(){
-<<<<<<< HEAD
-    return true 
-=======
     return true
->>>>>>> 04c1d8e84ae5544fa2060c17945c10e07e4f4de4
 }//ValidarEmail
 
 //valida que la entrada sea telefono
@@ -43,14 +36,11 @@ function validarMensaje(){
     return (txtMensaje.value.length >=20)
 }//validarNombre
 
-<<<<<<< HEAD
-=======
 
 
 
 
 
->>>>>>> 04c1d8e84ae5544fa2060c17945c10e07e4f4de4
 btnsubmit.addEventListener("click", function(event){
     event.preventDefault();
     clearTimeout(idTimeout);
@@ -65,31 +55,11 @@ btnsubmit.addEventListener("click", function(event){
             lista += "<li> Se debe escribir un nombre válido (al menos tres caracteres)</li>";
         }//validarNombre
 
-<<<<<<< HEAD
-        if (! validarEmail()) {
-            txtemail.style.border = "red thin solid";
-            lista += "<li> Se debe escribir correo electrónico valido</li>";
-        }//validaremail
-
-        if (! validarNumber()) {
-            txtNumber.style.border = "red thin solid";
-            lista += "<li> Se debe escribir un numero telefónico valido</li>";
-        }//validaremail
-
-        if (! validarMensaje()) {
-            txtMensaje.style.border = "red thin solid";
-            lista += "<li> Se debe escribir un mensaje válido (al menos veinte caracteres)</li>";
-        }//validarMensaje
-
-        
-
-=======
         if (! validarMensaje()) {
             txtNumber.style.border = "red thin solid";
             lista += "<li> Se debe escribir un menssaje válido (al menos veinte caracteres)</li>";
         }//validarMensaje
 
->>>>>>> 04c1d8e84ae5544fa2060c17945c10e07e4f4de4
         lista += "</ul>";
 
         alertValidacionesTexto.insertAdjacentHTML("beforeend", lista);
