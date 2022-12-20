@@ -12,6 +12,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="./js/main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -98,11 +100,11 @@
                   <label for="floatingTextarea2"><h4>Mensaje</h4></label>
                     <textarea class="form-control" placeholder="Escribe tu mensaje" id="txtMensaje" style="height: 100px"></textarea>
                     </div>
-                  <button type="submit" id="btnEnviar" class="btn btn-primary">Enviar</button>
+                  <button type="submit" id="btnsubmit" class="btn btn-primary">Enviar</button>
                   </form>
                 </div>  
             </div>
-            <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
+            <div class="alert alert-danger" style="display:none;" role="alert" id="alertValidaciones">
               <p id="alertValidacionesTexto"></p>
           </div>      
         </div>
