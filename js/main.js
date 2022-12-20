@@ -1,5 +1,3 @@
-
-
 let txtNombre = document.getElementById("txtNombre");
 let txtemail =  document.getElementById("txtemail");
 let txtNumber = document.getElementById("txtNumber");
