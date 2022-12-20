@@ -60,7 +60,7 @@ btnsubmit.addEventListener("click", function(event){
 
         if (! validarMensaje()) {
             txtMensaje.style.border = "red thin solid";
-            lista += "<li> Se debe escribir un menssaje válido (al menos veinte caracteres)</li>";
+            lista += "<li> Se debe escribir un mensaje válido (al menos veinte caracteres)</li>";
         }//validarMensaje
 
         
