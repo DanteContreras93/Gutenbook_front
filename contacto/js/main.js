@@ -115,37 +115,37 @@ btnsubmit.addEventListener("click", function(event){
     txtNombre.focus();
     console.log(txtNombre.value);
 
-    // //e.preventDefault();
-    // console.log("Click");
+    //e.preventDefault();
+    console.log("Click");
 
-    // //para que se escriban las instrucciones html
-    // let ebody= `
-    //             <b>Nombre: </b>${txtNombre.value}<br>
-    //             <b>email: </b>${txtemail.value}<br>
-    //             <b>telefono: </b>${txtNumber.value}<br>
-    //             <b>mensaje: </b>${txtMensaje.value}<br>
-    //             `
+    //para que se escriban las instrucciones html
+    let ebody= `
+                <b>Nombre: </b>${txtNombre.value}<br>
+                <b>email: </b>${txtemail.value}<br>
+                <b>telefono: </b>${txtNumber.value}<br>
+                <b>mensaje: </b>${txtMensaje.value}<br>
+                `
 
-    // Email.send({
-    //     SecureToken : "6403fd97-7ca2-4041-ac0b-f09a5814bf5c",
-    //     To : txtemail.value,
-    //     From : "tortillajuden@gmail.com",
-    //     Subject : "Gracias por contactarnos con nosotros en un plazo maximo de 2 dias nos pondremos en contacto contigo"+txtemail.value,
-    //     Body : "Por contactarnos de esta forma recibe un codigo de descuento en tu proxima compra. CODE= ASDASFSDHFS41526265"
-    // }).then(
-    //   message => alert(message)
-    // );
+    Email.send({
+        SecureToken : "6403fd97-7ca2-4041-ac0b-f09a5814bf5c",
+        To : txtemail.value,
+        From : "tortillajuden@gmail.com",
+        Subject : "Gracias por contactarnos con nosotros en un plazo maximo de 2 dias nos pondremos en contacto contigo"+txtemail.value,
+        Body : "Por contactarnos de esta forma recibe un codigo de descuento en tu proxima compra. CODE= ASDASFSDHFS41526265"
+    }).then(
+      message => alert(message)
+    );
 
-    // //codigo para enviar email
-    // Email.send({
-    //     SecureToken : "6403fd97-7ca2-4041-ac0b-f09a5814bf5c",
-    //     To : 'tortillajuden@gmail.com',
-    //     From : "tortillajuden@gmail.com",
-    //     Subject : "Test email"+ txtemail.value,
-    //     Body : ebody
-    // }).then(
-    //   message => alert(message)
-    // );
+    //codigo para enviar email
+    Email.send({
+        SecureToken : "6403fd97-7ca2-4041-ac0b-f09a5814bf5c",
+        To : 'tortillajuden@gmail.com',
+        From : "tortillajuden@gmail.com",
+        Subject : "Test email"+ txtemail.value,
+        Body : ebody
+    }).then(
+      message => alert(message)
+    );
 
 });
 
