@@ -1,12 +1,23 @@
+
+
+
 let txtNombre = document.getElementById("txtNombre");
 let txtemail =  document.getElementById("txtemail");
 let txtNumber = document.getElementById("txtNumber");
 let txtMensaje = document.getElementById("txtMensaje");
 
+
+//mensajes validación//
+
+let messageNombre = document.getElementById("messageNombre")
+let messageNumber = document.getElementById("messageNumber")
+let messageEmail = document.getElementById("messageEmail")
+let messageMensaje = document.getElementById("messageMensaje")
+
+//mensajes validacion//
+
 const submit = document.getElementsByClassName('form-contact')[0];
 
-let alertValidaciones= document.getElementById("alertValidaciones");
-let alertValidacionesTexto = document.getElementById("alertValidacionesTexto");
 
 let idTimeout;
 
@@ -14,26 +25,38 @@ let datos = []; // new Array();
 
 let btnsubmit = document.getElementById("btnsubmit")
 
-//valida longitud de cadena de nombre
+//Expresiones para validar//
+
+let regexName = /^([a-zA-Z]{1})[\w]{2,}$/;
+let regexNumber = /^\d{10}$/;
+let regexEmail = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
+let regexMessage = /^.{20,}$/;
+
+//Expresiones para validar//
+
+
+//funciones para validar//
+
 function validarNombre(){
-    return (txtNombre.value.length >2)
+    return (regexName.test(txtNombre.value))
 }//validarNombre
 
 //valida que la entrada sea email
 function validarEmail(){
-    return true
+    return (regexEmail.test(txtemail.value))
 }//ValidarEmail
 
 //valida que la entrada sea telefono
 function validarNumber(){
-    return (txtNumber.value.length >=10)
-}//validarNombre
+    return (regexNumber.test(txtNumber.value))
+}//validarNumber
 
 //valida longitud de cadena de mensaje
 function validarMensaje(){
-    return (txtMensaje.value.length >=20)
-}//validarNombre
+    return (regexMessage.test(txtMensaje.value))
+}//validarMensaje
 
+//funciones para validar//
 
 
 
@@ -42,41 +65,55 @@ function validarMensaje(){
 btnsubmit.addEventListener("click", function(event){
     event.preventDefault();
     clearTimeout(idTimeout);
-    
 
-    alertValidacionesTexto.innerHTML = "";
-
-    if ((! validarNombre()) || (! validarMensaje())) {
+    if ((! validarNombre()) || (! validarEmail()) || (! validarNumber()) || (! validarMensaje())) {
         let lista = "<ul>";
-        if (! validarNombre()) {
-            txtNombre.style.border = "red thin solid";
-            lista += "<li> Se debe escribir un nombre válido (al menos tres caracteres)</li>";
-        }//validarNombre
+        if (! validarNombre()){
+            messageNombre.style.display = "block"
+            txtNombre.style.border = "red thin solid"
+        } //validarNombre
 
-        if (! validarMensaje()) {
-            txtNumber.style.border = "red thin solid";
-            lista += "<li> Se debe escribir un menssaje válido (al menos veinte caracteres)</li>";
+        if (! validarEmail()){
+            messageEmail.style.display = "block"
+            txtemail.style.border = "red thin solid"
         }//validarMensaje
 
-        lista += "</ul>";
+        if (! validarNumber()){
+            messageNumber.style.display = "block"
+            txtNumber.style.border = "red thin solid"
+        }//validarEmail
 
-        alertValidacionesTexto.insertAdjacentHTML("beforeend", lista);
-        
-        alertValidaciones.style.display = "block";
+        if (! validarMensaje()){
+            messageMensaje.style.display = "block"
+            txtMensaje.style.border = "red thin solid"
+        }//ValidarMensaje
+
+
+
 
         idTimeout = setTimeout(function(){
-            alertValidaciones.style.display = "none";
-        }, 5000);
+         
+            messageNombre.style.display = "none"
+            messageEmail.style.display = "none"
+            messageNumber.style.display = "none"
+            messageMensaje.style.display = "none"
+        }, 4000);
 
         return false;
     }//if ! validaciones
 
     txtNombre.style.border = "";
+    messageNombre.style.display = "none"
+    txtemail.style.border = "";
+    messageEmail.style.display = "none"
     txtNumber.style.border = "";
-    alertValidaciones.style.display = "none";
+    messageNumber.style.display = "none"
+    txtMensaje.style.border = "";
+    messageMensaje.style.display = "none"
+
     
     txtNombre.focus();
-
+    console.log(txtNombre.value);
 
     //e.preventDefault();
     console.log("Click");

@@ -116,6 +116,11 @@ nav .content .links{
 .wrapper input[type="checkbox"]{
   display: none;
 }
+.dummy-text{
+  font-size: 20px;
+  background-color: green;
+  overflow: clip;
+}
 
 /* Dropdown Menu code start */
 .content .links ul{

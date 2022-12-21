@@ -150,6 +150,12 @@ nav .content .links{
   top: 0;
 }
 
+.alert_validation {
+  color: red;
+  font-size: 10px;
+  display: none;
+}
+
 /* Responsive code start */
 @media screen and (max-width: 1250px){
   .wrapper nav{
