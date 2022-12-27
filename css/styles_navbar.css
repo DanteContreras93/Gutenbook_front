@@ -69,56 +69,13 @@ color: #fdfd96;
   color: white;
 }
 
-
-.alert_validation{
-  display: none;
-  color: red;
-}
-
-.main-container p h4 .form-label .mb-3 form{
-  color: black;
-}
-
-.titulo h2{
+.dante-footer{
+  background-image: #84b6f4 !important;
+  background-color: #84b6f4 !important;
+  width: 100%;
   text-align: center;
-  font-size: 70px;
-  color: #000000;
-  
-}
-
-.row .descripcion{
-  text-align: center;
-  font-size: 20px;
-}
-
-.logo-mapa{
-  display: flex; justify-content: center;
-}
-
-.mapa-responsivo{
-
-  overflow:hidden;
-
-  padding-bottom:56.25%;
-
-  position:relative;
-
-  height:0;
-
-}
-
-.mapa-responsivo iframe{
-
-  left:0;
-
-  top:0;
-
-  height:100%;
-
-  width:100%;
-
-  position:absolute;
-
+  border: 10px;
+  border-color: #000000 ;
 }
 
 
