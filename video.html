@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/video.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>video</title>
+</head>
+<body>
+    <div class="form-box">
+        <h1>Login here</h1>
+        <div class="input-box"> 
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <input type="text" placeholder="Email Id">
+        </div>
+
+        <div class="input-box"> 
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" placeholder="Password" id="myInput">
+            <span class="eye" onclick="myFunction()">
+                <i class="fa fa-eye" id="hide1"></i>
+                <i class="fa fa-eye-slash" id="hide2"></i>
+            </span>
+        </div>
+            <button class="button" id="login-btn">LOGIN</button>
+    </div>
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myInput");
+            var y = document.getElementById("hide1");
+            var z = document.getElementById("hide2");
+
+            if (x.type ==="password" ) {
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+
+            } else {
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

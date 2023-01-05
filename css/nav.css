@@ -75,16 +75,23 @@
     color: white;
   }
   
-  .dante-footer{
+  .dante-footer > *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0.5rem;
     background-image: #84b6f4 !important;
     background-color: #84b6f4 !important;
+    height: auto;
     width: 100%;
     text-align: center;
     border: 10px;
     border-color: #000000 ;
   }
   
-  
+  .mainContent{
+    min-height: 100vh;
+  }
   
   @media (min-width: 992px) {
     .main-container{
