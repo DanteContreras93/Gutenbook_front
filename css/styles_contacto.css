@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-  color: white;
+ /* color: white;*/
 }
 
 
@@ -11,11 +11,7 @@
 }
 
 
-.navbar-brand {
-  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
-  color: white !important;
-  font-size: 2em;
-}
+
 
 #navbarSupportedContent {
   font-family: "Comic Sans MS", "Comic Sans" !important;
@@ -40,6 +36,12 @@ cursor: pointer;
 
 .nav-logos{
   font-size: 10px;
+}
+
+.navbar-brand {
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  color: white !important;
+  font-size: 2em;
 }
 
 .alert_validation{
