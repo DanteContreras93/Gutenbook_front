@@ -28,7 +28,7 @@ let btnsubmit = document.getElementById("btnsubmit")
 //Expresiones para validar//
 
 let regexName = /^([a-zA-Z]{1})[\w]{2,}$/;
-let regexNumber = /^\d{10}$/;
+let regexNumber = /^(33)\d{8}$/;
 let regexEmail = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
 let regexMessage = /^.{20,}$/;
 
@@ -67,44 +67,55 @@ btnsubmit.addEventListener("click", function(event){
     clearTimeout(idTimeout);
 
     if ((! validarNombre()) || (! validarEmail()) || (! validarNumber()) || (! validarMensaje())) {
-        let lista = "<ul>";
         if (! validarNombre()){
             messageNombre.style.display = "block"
             txtNombre.style.border = "red thin solid"
-        } //validarNombre
+        } else{
+            messageNombre.style.display = "none"
+        }//validarNombre
 
         if (! validarEmail()){
             messageEmail.style.display = "block"
             txtemail.style.border = "red thin solid"
+        } else{
+            messageEmail.style.display = "none"
         }//validarMensaje
 
         if (! validarNumber()){
             messageNumber.style.display = "block"
             txtNumber.style.border = "red thin solid"
+        } else{
+            messageNumber.style.display = "none"
         }//validarEmail
 
         if (! validarMensaje()){
             messageMensaje.style.display = "block"
             txtMensaje.style.border = "red thin solid"
+        } else{
+            messageMensaje.style.display = "none"
         }//ValidarMensaje
-
 
 
 
         idTimeout = setTimeout(function(){
          
-            messageNombre.style.display = "none"
+            // messageNombre.style.display = "none"
             txtNombre.style.border = ""
-            messageEmail.style.display = "none"
+            // messageEmail.style.display = "none"
             txtemail.style.border = ""
-            messageNumber.style.display = "none"
+            // messageNumber.style.display = "none"
             txtNumber.style.border = ""
-            messageMensaje.style.display = "none"
+            // messageMensaje.style.display = "none"
             txtMensaje.style.border = ""
         }, 4000);
 
         return false;
-    }//if ! validaciones
+    } else{
+            txtNombre.value = "";
+            txtemail.value = "";
+            txtNumber.value = "";
+            txtMensaje.value = "";
+        }//if ! validaciones
 
     txtNombre.style.border = "";
     messageNombre.style.display = "none"
