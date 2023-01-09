@@ -94,9 +94,13 @@ btnsubmit.addEventListener("click", function(event){
         idTimeout = setTimeout(function(){
          
             messageNombre.style.display = "none"
+            txtNombre.style.border = ""
             messageEmail.style.display = "none"
+            txtemail.style.border = ""
             messageNumber.style.display = "none"
+            txtNumber.style.border = ""
             messageMensaje.style.display = "none"
+            txtMensaje.style.border = ""
         }, 4000);
 
         return false;
