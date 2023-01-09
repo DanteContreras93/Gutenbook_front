@@ -10,16 +10,27 @@
       src="https://kit.fontawesome.com/ab5cfb6f45.js" 
       crossorigin="anonymous">
     </script><!--iconos y estilo de texto-->
+    <script defer 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+      crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="./css/nav.css"><!--css navbar-->
     <title>nav.html</title>
 </head>
 <body>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">Gutenbook</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" id = "mainLogo" href="./index.html">Gutenbook</a>
+            <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -32,40 +43,33 @@
                 <li class="nav-item">
                   <a class="nav-link" id="navitem" href="./contacto.html">Contacto</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" id="navitem" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Géneros
-                  </a>
-                  <ul class="dropdown-menu" id="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Género1</a></li>
-                    <li><a class="dropdown-item" href="#">Género2</a></li>
-                    <li><a class="dropdown-item" href="#">Género3</a></li>
-                  </ul>
-                </li>
+
               </ul>
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search">
-                <button class="btn" id= "btnBuscar" type="submit">buscar</button>
-              </form>
-              <div class="divicon">
-                <g class="diviconSelect">
-                    <div class="logo">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <p class="nav-logos">Iniciar sesión</p>
-                </g>
-              </div>
-                <div class="divicon">
-                  <g class="diviconSelect">
-                      <div class="logo">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </div>
-                      <p class="nav-logos">Carrito</p>
-                  </g>
+                <div class="input-group mb-3">
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Buscar" 
+                    aria-label="Recipient's username" 
+                    aria-describedby="basic-addon2">
+                  <span class="input-group-text" id="basic-addon2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
                 </div>
+              </form>
+
+              <div class="navicon">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="navicon">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
             </div>
           </div>
       </nav>
+    </header>
+
 
 </body>
 </html>
