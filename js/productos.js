@@ -1,3 +1,4 @@
+//import Swal from 'sweetalert2/dist/sweetalert2.js'
 //Declaracion de libros y asociacion con html
 let titulo = document.getElementById("titulo");
 let img =  document.getElementById("img");
@@ -8,15 +9,17 @@ let mainProds = document.getElementById("mainProductos");
 
 //mensajes validación//
 
-let messageTitulo = document.getElementById("messageTitulo")
-let messageImagen = document.getElementById("messageImagen")
-let messageAutor = document.getElementById("messageAutor")
-let messagePrecio = document.getElementById("messagePrecio")
+let messageTitulo = document.getElementById("messageTitulo");
+let messageImagen = document.getElementById("messageImagen");
+let messageAutor = document.getElementById("messageAutor");
+let messagePrecio = document.getElementById("messagePrecio");
+let Exito = document.querySelector("#Exito");
 
 //const submit = document.getElementsByClassName('form-contact')[0];
 
 
 let idTimeout;
+let idTimeout2;
 let cantidad =0;
 let datos = []; // new Array();
 
@@ -25,7 +28,7 @@ let btnReset = document.getElementById("btnReset");
 
 //Expresiones para validar//
 
-let regexTitulo = /([^a-z0-9\u00C0-\u017F]+)/i
+let regexTitulo = /^[a-zA-ZÀ-ÿ\s]{1,40}$/
 let regexURL = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/
 let regexAutor = /(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})/
 let regexPrecio = /^\d+(,\d{3})*(\.\d{1,2})?$/;
@@ -68,7 +71,6 @@ btnEnviar.addEventListener("click", function(event){
             messageTitulo.style.display = "block"
             titulo.style.border = "red thin solid"
         } //validarNombre
-
         if (! validarURL()){
             messageImagen.style.display = "block"
             img.style.border = "red thin solid"
@@ -83,18 +85,28 @@ btnEnviar.addEventListener("click", function(event){
             messagePrecio.style.display = "block"
             precio.style.border = "red thin solid"
         }
+        
         idTimeout = setTimeout(function(){
          
             messageTitulo.style.display = "none"
+            titulo.style.border = ""
             messageImagen.style.display = "none"
+            img.style.border = ""
             messageAutor.style.display = "none"
-            messagePrecio.style.display = "none"       
+            autor.style.border = ""
+            messagePrecio.style.display = "none"  
+            precio.style.border = ""     
         }, 4000);
 
         return false;
-    }//if ! validaciones
-
-
+    } else{
+        Swal.fire(
+            'Libro registrado!',
+            'haz clic para salir!',
+            'success'
+          )
+    }
+        
     let elemento = `{
         "Titulo":"${titulo.value}",
         "URL":"${img.value}",
@@ -105,13 +117,6 @@ btnEnviar.addEventListener("click", function(event){
     datos.push(JSON.parse(elemento));
     localStorage.setItem("datos", JSON.stringify(datos));
 
-
-    function resetForm() {
-        var elems = document.querySelectorAll(".text-danger");
-        elems.forEach(itm => {
-          document.getElementById(itm.id).innerHTML = ''
-        });
-    }
 
     titulo.value = "";
     img.value = "";
@@ -147,5 +152,3 @@ precio.addEventListener("blur", function (event){
     // txtNumber.value = txtNumber.value.trim();
     event.target.value = event.target.value.trim();
 });
-
-    
