@@ -13,14 +13,23 @@ signInBtn.addEventListener('click', () => {
 
 
 
-
-// let txtNombreIn = document.getElementById("txtNombreIn");
-// let txtContrasenaIn = document.getElementById("txtContrasenaIn");
-
+// VARIABLES REGISTRO
 let txtNombreUp = document.getElementById("txtNombreUp");
+let txtEmailUp = document.getElementById("txtEmailUp");
+let txtTelUp = document.getElementById("txtTelUp");
 let txtContrasenaUp = document.getElementById("txtContrasenaUp");
-let txtTelUp =  document.getElementById("txtTelUp");
-let txtEmailUp =  document.getElementById("txtEmailUp");
+
+// VARIABLES INGRESO
+let txtNombreIn = document.getElementById("txtNombreIn");
+let txtContrasenaIn = document.getElementById("txtContrasenaIn");
+
+// BOTONES
+
+let btnsubmitIn = document.getElementById("btnsubmitIn");//Ingreso
+let btnsubmitUp = document.getElementById("btnsubmitUp");//Registro
+
+let datos = []; // new Array();
+
 
 
 //mensajes validación//
@@ -53,7 +62,7 @@ let idTimeout;
 
 // let datos = []; // new Array();
 
-let btnsubmit = document.getElementById("btnsubmit")
+let btnsubmit = document.getElementById("btnsubmitUp")
 
 //Expresiones para validar//
 
@@ -96,17 +105,21 @@ btnsubmit.addEventListener("click", function(event){
 
     if ((! validarNombre()) || (! validarEmail()) || (! validarTel()) || (! validarContrasena())) {
 
-        btnsubmit.style.background = "#ff6961"
+        btnsubmit.style.backgroundColor = "#ff6961"
         if (! validarNombre()){
 
             if (validarprimerCaracter()) {
                 messageNombreUp1.style.display = "block"
                 NombreBorder.style.border = "#ff6961 medium solid"
+            } else{
+                messageNombreUp1.style.display = "none"
             }
 
             if (txtNombreUp.value.length < 3) {
                 messageNombreUp2.style.display = "block"
                 NombreBorder.style.border = "#ff6961 medium solid"
+            } else{
+                messageNombreUp2.style.display = "none"
             }
   
         } else{
@@ -139,30 +152,40 @@ btnsubmit.addEventListener("click", function(event){
                 messageContrasenaUp1.style.display = "block"
                 ContrasenaBorder.style.border = "#ff6961 medium solid"
                 mensajes++
+            } else{
+                messageContrasenaUp1.style.display = "none"
             }
 
            if (! /\d/.test(txtContrasenaUp.value) && mensajes <3) {
                 messageContrasenaUp2.style.display = "block"
                 ContrasenaBorder.style.border = "#ff6961 medium solid"
                 mensajes++
+            } else{
+                messageContrasenaUp2.style.display = "none"
             }
 
             if (! /[A-Z]/.test(txtContrasenaUp.value) && mensajes <3) {
                 messageContrasenaUp3.style.display = "block"
                 ContrasenaBorder.style.border = "#ff6961 medium solid"
                 mensajes++
+            } else{
+                messageContrasenaUp3.style.display = "none"
             }
 
             if (! /[a-z]/.test(txtContrasenaUp.value) && mensajes <3) {
                 messageContrasenaUp4.style.display = "block"
                 ContrasenaBorder.style.border = "#ff6961 medium solid"
                 mensajes++
+            } else{
+                messageContrasenaUp4.style.display = "none"
             }
 
             if (! /[!@#$%^&*]/.test(txtContrasenaUp.value) && mensajes <3) {
                 messageContrasenaUp5.style.display = "block"
                 ContrasenaBorder.style.border = "#ff6961 medium solid"
                 mensajes++
+            } else{
+                messageContrasenaUp5.style.display = "none"
             }
 
         } else{
@@ -178,20 +201,20 @@ btnsubmit.addEventListener("click", function(event){
 
         idTimeout = setTimeout(function(){
          
-            messageNombreUp1.style.display = "none"
-            messageNombreUp2.style.display = "none"
-            NombreBorder.style.border = ""
-            messageEmailUp.style.display = "none"
-            EmailBorder.style.border = ""
-            messageTelUp.style.display = "none"
-            TelBorder.style.border = ""
-            messageContrasenaUp1.style.display = "none"
-            messageContrasenaUp2.style.display = "none"
-            messageContrasenaUp3.style.display = "none"
-            messageContrasenaUp4.style.display = "none"
-            messageContrasenaUp5.style.display = "none"
-            ContrasenaBorder.style.border = ""
-            btnsubmit.style.background = "#84b6f4"
+            // messageNombreUp1.style.display = "none"
+            // messageNombreUp2.style.display = "none"
+            // NombreBorder.style.border = ""
+            // messageEmailUp.style.display = "none"
+            // EmailBorder.style.border = ""
+            // messageTelUp.style.display = "none"
+            // TelBorder.style.border = ""
+            // messageContrasenaUp1.style.display = "none"
+            // messageContrasenaUp2.style.display = "none"
+            // messageContrasenaUp3.style.display = "none"
+            // messageContrasenaUp4.style.display = "none"
+            // messageContrasenaUp5.style.display = "none"
+            // ContrasenaBorder.style.border = ""
+            btnsubmit.style.backgroundColor = "#84b6f4"
         }, 4000);
 
         return false;
@@ -211,6 +234,21 @@ btnsubmit.addEventListener("click", function(event){
     messageContrasenaUp4.style.display = "none"
     messageContrasenaUp5.style.display = "none"
 
+    let elemento = `{
+        "Usuario": "${txtNombreUp.value}",
+        "Email": "${txtEmailUp.value}",
+        "Telefono":"${txtTelUp.value}",
+        "Contrasena":"${txtContrasenaUp.value}"
+    }`;
+
+    datos.push(JSON.parse(elemento));
+    console.log(datos);
+    localStorage.setItem("datos", JSON.stringify(datos))
+
+    txtNombreUp.value = "";
+    txtEmailUp.value = "";
+    txtTelUp.value = "";
+    txtContrasenaUp.value = "";
 
     
     txtNombreUp.focus();
@@ -279,13 +317,50 @@ txtTelUp.addEventListener("blur", function (event){
     event.target.value = event.target.value.trim();
 });
 
-// txtContrasenaRep.addEventListener("blur", function (event){
-//     event.preventDefault();
-//     // txtNumber.value = txtNumber.value.trim();
-//     event.target.value = event.target.value.trim();
-// });
 
-// //evento BLUR
+
+
+function myFunctionUp(){
+    var x = document.getElementById("txtContrasenaUp");
+    var y = document.getElementById("hide3");
+    var z = document.getElementById("hide4");
+
+    if (x.type ==="password" ) {
+        x.type = "text";
+        y.style.display = "block";
+        z.style.display = "none";
+
+    } else {
+        x.type = "password";
+        y.style.display = "none";
+        z.style.display = "block";
+    }
+    
+}
+
+
+
+function myFunctionIn(){
+var x = document.getElementById("txtContrasenaIn");
+var y = document.getElementById("hide1");
+var z = document.getElementById("hide2");
+
+if (x.type ==="password" ) {
+    x.type = "text";
+    y.style.display = "block";
+    z.style.display = "none";
+
+} else {
+    x.type = "password";
+    y.style.display = "none";
+    z.style.display = "block";
+}
+
+}
+
+
+
+
 
 
 

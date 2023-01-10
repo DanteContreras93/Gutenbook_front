@@ -97,11 +97,15 @@ btnsubmit.addEventListener("click", function(event){
             if (validarprimerCaracter()) {
                 messageNombreUp1.style.display = "block"
                 NombreBorder.style.border = "#ff6961 medium solid"
+            } else{
+                messageNombreUp1.style.display = "none"
             }
 
             if (txtNombreUp.value.length < 3) {
                 messageNombreUp2.style.display = "block"
                 NombreBorder.style.border = "#ff6961 medium solid"
+            } else{
+                messageNombreUp2.style.display = "none"
             }
   
         } else{
