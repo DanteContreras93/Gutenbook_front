@@ -10,6 +10,8 @@
     <script defer src="https://smtpjs.com/v3/smtp.js"></script>
     <script defer src="./icons/package.json"></script>
     <script defer src="./icons/package-lock.json"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     
   </head>
@@ -84,6 +86,7 @@
           <h2>Agrega un nuevo libro </h2>
         </div>
         <br>
+        
         <main class="container mt-3">
             <div class="row justify-content-md-center">
                 <form class="col-12 col-md-7 bd-example">
@@ -92,38 +95,42 @@
                         <label for="exampleFormControlInput1" class="form-label">Titulo:</label>
                         <input type="text" class="form-control" id="titulo" aria-describedby="basic-addon3">
                         <p class = "alert_validation" id = "messageTitulo">Por favor introduce un titulo valido</p>
+
                       </div>
     
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">url-img:</label>
                         <input type="text" class="form-control" id="img" aria-describedby="basic-addon3">
                         <p class = "alert_validation" id = "messageImagen">Por favor introduce una url valida</p>
+
                     </div>  
     
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Autor:</label>
                         <input type="text" class="form-control" id="autor" aria-describedby="basic-addon3">
                         <p class = "alert_validation" id = "messageAutor">Por favor introduce autor valido </p>
+
                     </div>
     
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Precio:</label>
                         <input type="text" class="form-control" id="precio" aria-describedby="basic-addon3">
                         <p class = "alert_validation" id = "messagePrecio">Por favor introduce precio valido</p>
-
+                       
                     </div>
-    
-                    <button type="button" id="btnEnviar" class="btn btn-primary">Enviar</button>
-                    <button  class="btn btn-secondary" onclick="resetForm();  return false;">Restablecer datos</button>
+                    <button type="button" id="btnEnviar" class="btn btn-primary">Enviar</button>       
+                    
                 </form>
-                
-    
             </div>
 
             <div class="container" id="mainProductos"></div>
     
            
-        </main>    
+        </main>  
+     
+        <footer>
 
+        </footer>
+        <script src="./js/header-footer.js"></script>
     </body>
 </html>
