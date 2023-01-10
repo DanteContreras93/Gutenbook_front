@@ -1,6 +1,6 @@
 let signInBtn = document.querySelector("#sign-in-btn");
 let signUpBtn = document.querySelector("#sign-up-btn");
-let container = document.querySelector(".container");
+let container = document.querySelector(".container-register");
 
 signUpBtn.addEventListener('click', () => {
     

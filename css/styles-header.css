@@ -6,6 +6,10 @@ body{
     color: var(--bs-orange)!important;
 } */
 
+nav{
+    border-bottom: 0.5px solid #fdcae1;
+}
+
 .navbar-brand{
     font-size: 1.5em ;
    }

@@ -5,7 +5,7 @@ const footer = document.querySelector("footer");
 header.innerHTML =  ` 
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #84B6F4;">
       <div class="container">
-          <a class="navbar-brand fw-bold" href="#">Gutembook</a>
+          <a class="navbar-brand fw-bold" href="#">Gutenbook</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -116,7 +116,7 @@ footer.innerHTML =  `
               <div class="col-md-7 col-lg-8">
                 <p>Copyright &copy; 2023 Todos los derechos reservados.
                   <a href="#" style="text-decoration: none;">
-                    <p class="fw-semibold">Introverdevs</p>
+                    <p class="fw-semibold">Gutenbook</p>
                   </a>
                 </p>
               </div>
