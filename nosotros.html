@@ -1,125 +1,193 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nosotros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles_nosotros.css">
-  </head>
+    <!--se importa las iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Se importa el css para la transición-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Sed importa la fuentes de poppins y roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Poppins:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Gutenbook</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" id="navitem" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="navitem" href="./nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="navitem" href="./contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="navitem" href="./registro.html">Registro</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navitem" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Géneros
-                </a>
-                <ul class="dropdown-menu" id="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Género1</a></li>
-                  <li><a class="dropdown-item" href="#">Género2</a></li>
-                  <li><a class="dropdown-item" href="#">Género3</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">buscar</button>
-            </form>
-          </div>
+    <style>
+        .ho:hover {
+          text-shadow: none !important;
+          box-sizing: border-box !important;
+          cursor: pointer !important;
+          transition: all 0.3s ease !important;
+          -webkit-transform: scale(1.1) !important;
+          -ms-transform: scale(1.1) !important;
+          transform: scale(1.1) !important;
+          z-index: 2;
+        }
+    </style>
+    <nav>
+      
+    </nav>
+    <div class="container d-flex justify-content-center">
+      <div style="max-height: 95vh;" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-duration="2000">
+        <div class="text-center">
+          <p class="fs-1 fw-bolder mt-5">GUTENBOOK</p>
+          <p class="fs-2">"Mejorando día a día para ser la mejor librería del país"</p>
         </div>
-      </nav>
-      <!--Se agrega descripción de la librería-->
-        <div class="containerSup">
-          <div class="title">
-            <h1 style="font-size: 50px;">Gutenbook</h1>
-          </div>
-          </div>
-          <div class="containerMid">
-            <div>
-              <h3>"Mejorando día a día para ser la mejor librería del país"</h3>
-              <p style="font-size: 20px;">En Gutenbook Buscamos ser una librería líder en venta y distribución de libros de texto, libros
-                de lectura en general, plataformas digitales, tanto de editoriales nacionales como extranjeras,
-                reconocida por la calidad de nuestro servicio y la contribución a la comunidad educativa.</p>
-    
-              <div class="btn btn-info">
-                <a href="./contacto.html">Contacto</a>
-              </div>
-            <div class="social">
-              <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-            </div>
-           </div> 
-          <figure class="figure">
-            <img src="./imagenes/equipo1.jpg" class="figure-img img-fluid rounded" alt="imagen librería cinco personas sosteniendo un libro">
-            <!-- <figcaption class="figure-caption">A caption for the above image.</figcaption> -->
-          </figure>
-          </div>
-      <!--Termina descripción de la librería-->
-      <div class="container">
-        <div class="card" style="width: 18rem;">
-          <img src="./imagenes/profile_dante_contreras_1-1.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text"><strong>Dante Contreras - Fullstack developer</strong><br>
-            Ingeniero con experiancia dirigiendo equipos, apasionado por aprender y resolver problemas.</p>
-          </div>
+        <div class="d-flex justify-content-center">
+        <img src="./imagenes/libroazul.jpg" alt="" class="img-fluid">
         </div>
-
-        <div class="card" style="width: 18rem;">
-          <img src="./imagenes/EmmanuelMina_1-1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text"><strong>Emmanuel Minaja - Fullstack developer</strong><br>
-              Egresado de la carrera en ingeniería en sistemas computaciones en ESCOM-IPN. 
-              <br> Soy un apasionado de la informática, soy muy hábil en el desarrollo de programas y la resolución de problemas.</p>
-          </div>
-        </div> 
-
-        <div class="card" style="width: 18rem;">
-          <img src="./imagenes/profile_alberto_vazquez.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text"><strong>Alberto Vázquez - Fullstack developer</strong><br>
-              Desarrollador Web fullstack, ingeniero en informática por el IPN. <br>
-              Cuento con experiencia en la busqueda y solución de errores. Apasionado de la seguridad y curioso por naturaleza.</p>
-          </div>
-        </div> 
-
-        <div class="card" style="width: 18rem;">
-          <img src="./imagenes/fer_caballero_perfil1_1-1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text"><strong>Fernando Caballero - Fullstack developer</strong><br>
-              Ingeniero en sistemas computacionales y busco desarrollarme en el área de tecnologías de información. 
-              <br> Desde muy chico me apasiona el mundo de la programación y el aprender cosas nuevas cada día.</p>
-          </div>
-        </div> 
-
-        <div class="card" style="width: 18rem;">
-          <img src="./imagenes/Esdras_1-1.PNG" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text"><strong>Esdras  - Fullstack developer</strong><br>
-              Ingeniero en sistemas Computacionales, soy una persona aplicada, responsable, con muchas ganas de trabajar y aprender, apasionado por la programacion y la mejora constante.
-              
-             <br> Me gustan los retos profesionales </p>
-          </div>
-        </div> 
       </div>
-</body>
+    </div>
+    <!--Empieza el contenedor de acerca de gutenbook-->
+    <div class="container-fluid" data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="3000" style="height: 65vh; background-color: rgb(245, 237, 237);">
+      <div>
+        <p class="fs-1 fw-bolder text-center">Acerca de Gutenbook</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="col text-center justify-content-center mt-5">
+            <blockquote class="blockquote justify-content-center">
+              <h3 class="fw-bolder">"Mejorando día a día para ser la mejor librería del país"</h3>
+                <p class="text-center justify-content-center">En Gutenbook Buscamos ser una librería líder en venta y distribución de libros de texto, libros
+                      de lectura en general, plataformas digitales, tanto de editoriales nacionales como extranjeras,
+                      reconocida por la calidad de nuestro servicio y la contribución a la comunidad educativa.</p>
+            </blockquote>        
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="col d-flex justify-content-center">
+            <img src="./imagenes/libreria.jpg" class="img-thumbnail" alt="...">
+          </div>
+        </div>
+      </div>
+      <!--Termina el contenedor del acerca de gutenbook-->
+    </div>
+    <!--Empieza el contenedor de las tarjetas-->
+    <div class="container">
+      <h1 class="text-center fw-bolder mt-5">Conócenos</h1>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+      <!--Se define el responsivo de la tarjeta-->
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+        <!--Empieza la clase de la tarjeta-->
+          <div class="card ho" data-aos="zoom-out-right" data-aos-duration="3000" style="width: 18rem;">
+            <img src="./imagenes/profile_dante_contreras_1-1.jpeg" class="card-img-top rounded-3" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Dante Contreras</h5>
+            <p class="card-text">Ingeniero con experiancia dirigiendo equipos, apasionado por aprender y resolver problemas.</p>
+            <!--Iconos de Linkdin y GitHub-->
+              <div>
+                <a href="#"><i class="bi bi-github" style="font-size: 3vh;"></i></a>
+                <a href="#"><i class="bi bi-linkedin" style="font-size: 3vh;"></i></a>
+              </div>
+              
+            </div>
+          <!--Termina la clase de la tarjeta-->
+          </div>
+        <!--Se termina el responsivo de la tarjeta-->
+        </div>
+        <!--Se define el responsivo de la tarjeta-->
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+          <!--Empieza la clase de la tarjeta-->
+          <div class="card ho" data-aos="flip-up" data-aos-duration="3000" style="width: 18rem;">
+            <img src="./imagenes/EmmanuelMina_1-1.jpg" class="card-img-top rounded-3" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Emmanuel MInajas carbajal</h5>
+              <p class="card-text">Egresado de la carrera en ingeniería en sistemas computaciones en ESCOM-IPN. 
+                <br> Soy un apasionado de la informática, soy muy hábil en el desarrollo de programas y la resolución de problemas.</p>
+              <div>
+              <!--Iconos de Linkdin y GitHub-->
+                <a href="https://github.com/eminajas"><i class="bi bi-github" style="font-size: 3vh;"></i></a>
+                <a href="https://www.linkedin.com/in/eminajas/"><i class="bi bi-linkedin" style="font-size: 3vh;"></i></a>
+              </div>
+              
+            </div>
+            <!--Termina la clase de la tarjeta-->
+          </div>
+          <!--Se termina el responsivo de la tarjeta-->
+          </div>
+          <!--Se define el responsivo de la tarjeta-->
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+          <!--Empieza la clase de la tarjeta-->
+          <div class="card ho"  data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000" style="width: 18rem;">
+            <img src="./imagenes/Esdras_1-1.PNG" class="card-img-top rounded-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder">Esdras de Jesús López Palacios</h5>
+              <p class="card-text">Ingeniero en sistemas Computacionales, soy una persona aplicada, responsable, con muchas ganas de trabajar y aprender, apasionado por la programacion y la mejora constante.</p>
+              <div>
+              <!--Iconos de Linkdin y GitHub-->
+              <a href="#"><i class="bi bi-github" style="font-size: 3vh;"></i></a>
+              <a href="#"><i class="bi bi-linkedin" style="font-size: 3vh;"></i></a>
+              </div>
+              
+            </div>
+            <!--Termina la clase de la tarjeta-->
+          </div>
+          <!--Se termina el responsivo de la tarjeta-->
+          </div>
+          <!--Se termina el responsivo de la tarjeta-->
+          </div>
+          <div class="row d-flex justify-content-center mt-5">
+            <!--Se define el responsivo de la tarjeta-->
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <!--Empieza la clase de la tarjeta-->
+      <div class="card ho" data-aos="zoom-in-right" data-aos-duration="3000" style="width: 18rem;">
+        <img src="./imagenes/profile_alberto_vazquez.jpg" class="card-img-top rounded-3" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder">Carlos Alberto Vazquez Avila</h5>
+          <p class="card-text">Desarrollador Web fullstack, ingeniero en informática por el IPN. <br>
+            Cuento con experiencia en la busqueda y solución de errores. Apasionado de la seguridad y curioso por naturaleza.</p>
+          <div>
+          <!--Iconos de Linkdin y GitHub-->
+          <a href="#"><i class="bi bi-github" style="font-size: 3vh;"></i></a>
+          <a href="#"><i class="bi bi-linkedin" style="font-size: 3vh;"></i></a>
+          </div>
+          
+        </div>
+        <!--Termina la clase de la tarjeta-->
+      </div>
+      </div>
+      <!--Se define el responsivo de la tarjeta-->
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+      <!--Empieza la clase de la tarjeta-->
+      <div class="card ho" data-aos="flip-left" data-aos-duration="3000" style="width: 18rem;">
+        <img src="./imagenes/fer_caballero_perfil1_1-1.jpg" class="card-img-top rounded-3" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fw-bolder">Tomas Fernando Caballero Bravo</h5>
+          <p class="card-text">  Ingeniero en sistemas computacionales y busco desarrollarme en el área de tecnologías de información. 
+            <br> Desde muy chico me apasiona el mundo de la programación y el aprender cosas nuevas cada día.</p>
+          <div>
+          <!--Iconos de Linkdin y GitHub-->
+          <a href="https://github.com/TomyCaballero"><i class="bi bi-github" style="font-size: 3vh;"></i></a>
+          <a href="https://www.linkedin.com/in/tomascaballero1/"><i class="bi bi-linkedin" style="font-size: 3vh;"></i></a>
+          </div>
+          
+        </div>
+        <!--Se termina el responsivo de la tarjeta-->
+      </div>
+      <!--Se termina el responsivo de la tarjeta-->
+      </div>
+      </div>
+      <!--Se termina la clase container-->
+      </div>
+      <footer>
+      
+      </footer>
+    <script src="./js/header-footer.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </html>

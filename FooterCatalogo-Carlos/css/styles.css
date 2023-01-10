@@ -1,0 +1,43 @@
+:root{
+
+    --fuenteNav: 'Comic Neue', cursive;
+    --fuenteBody: 'Poppins', sans-serif;
+    --tamaño-principal: 3.8rem;
+    --azul-principal: #84B6F4;
+}
+
+
+nav{
+    font-family: var(--fuenteNav);
+    font-weight: 700;
+    background-color: var(--azul-principal);  
+}
+
+.btn-primary{
+    background-color: var(--azul-principal);
+    border-color: #fff;
+    font-size: 1.5rem;
+
+}
+.btn-outline-success{
+    color: #fff;
+    border-color: var(--azul-principal);
+    font-size: 1.3rem;
+    
+}
+
+.btn-outline-success:active{
+    color: var(--azul-principal) !important;
+    border-color: #fff !important;
+    background-color: #fff !important;
+}
+.btn-outline-success:hover{
+    color: var(--azul-principal);
+    border-color: #fff;
+    background-color: #fff;
+}
+
+
+body{
+    font-family:  var(--fuenteBody);
+}
