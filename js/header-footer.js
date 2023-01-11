@@ -13,22 +13,22 @@ header.innerHTML =  `
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Contactos.html">Contactos</a>
+              <a class="nav-link" href="Contacto.html">Contactos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="items.html">Productos</a>
+              <a class="nav-link" href="nosotros.html">Nosotos</a>
             </li>
    
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                Catalogo
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="catalogo.html">Recientes</a></li>
+                <li><a class="dropdown-item" href="registroLibro.html">Agregar Libro</a></li>
               </ul>
             </li>
       
@@ -36,14 +36,14 @@ header.innerHTML =  `
 
           <form class="d-flex search-box">
             <input class=" me-2 search-txt" type="search" placeholder="Buscar" aria-label="Search">
-            <a class="search-btn btn " href="#" >
+            <a class="search-btn" href="#" >
               <i class="fa-solid fa-magnifying-glass"></i>
             </a>
           </form>
 
           <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Login</a>
+              <a class="nav-link" aria-current="page" href="restro.html">Ingresar/Registrarse</a>
             </li>
           </ul>     
      

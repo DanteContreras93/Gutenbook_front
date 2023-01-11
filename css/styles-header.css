@@ -98,8 +98,11 @@ nav{
         float: left;
         border-radius: 50%;
         display: flex;
+        width: 44px;
+        height: 45px;
+        text-align: center;
         justify-content: center;
-        align-items: center;
+        padding: 12px;
         transition: 0.4s;
         margin-right: 5px;
         margin-left: 0px;
