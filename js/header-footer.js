@@ -69,7 +69,7 @@ footer.innerHTML =  `
                 <a href="./registro.html" class="text-white" style="text-decoration: none;">Inicio de sesión</a>
               </p>
               <p>
-                <a href="./registroLibro" class="text-white" style="text-decoration: none;">Agregar libro</a>
+                <a href="./registroLibro.html" class="text-white" style="text-decoration: none;">Agregar libro</a>
               </p>
            </div>
 
@@ -80,7 +80,7 @@ footer.innerHTML =  `
                 <a href="./index.html" class="text-white" style="text-decoration: none;">Inicio</a>
               </p>
               <p>
-                <a href="*/nosotros.html" class="text-white" style="text-decoration: none;">Nosotros</a>
+                <a href="./nosotros.html" class="text-white" style="text-decoration: none;">Nosotros</a>
               </p>
               <p>
                 <a href="./contacto.html" class="text-white" style="text-decoration: none;">Contacto</a>
