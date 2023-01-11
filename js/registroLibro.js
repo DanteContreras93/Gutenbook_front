@@ -108,10 +108,10 @@ btnEnviar.addEventListener("click", function(event){
     }
         
     let elemento = `{
-        "Titulo":"${titulo.value}",
-        "URL":"${img.value}",
-        "Autor":"${autor.value}",
-        "precio":${parseFloat(precio.value)}
+        "name":"${titulo.value}",
+        "img":"${img.value}",
+        "description":"${autor.value}",
+        "price":${parseFloat(precio.value)}
       }`;
     console.log(elemento);
     datos.push(JSON.parse(elemento));
@@ -152,3 +152,5 @@ precio.addEventListener("blur", function (event){
     // txtNumber.value = txtNumber.value.trim();
     event.target.value = event.target.value.trim();
 });
+
+    
