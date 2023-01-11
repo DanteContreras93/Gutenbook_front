@@ -163,15 +163,7 @@ btnsubmit.addEventListener("click", function(event){
         From : "tortillajuden@gmail.com",
         Subject : "Test email"+ txtemail.value,
         Body : ebody
-    }).then(
-        message => 
-        Swal.fire(
-          'Lo más pronto nos pondremos en contacto!',
-          'haz clic para salir!',
-          'success'
-        )
-    );
-
+    })
 });
 
 
