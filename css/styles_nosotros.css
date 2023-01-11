@@ -3,11 +3,6 @@
     --azul-principal: #84b6f4;
 }
 
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif !important;
-}
-
 .btn-primary{
     background-color: var(--azul-principal) !important;
     border-color: #84b6f4 !important;
