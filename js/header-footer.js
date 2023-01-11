@@ -5,7 +5,7 @@ const footer = document.querySelector("footer");
 header.innerHTML =  ` 
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #84B6F4;">
       <div class="container">
-          <a class="navbar-brand fw-bold" href="#">Gutenbook</a>
+          <a class="navbar-brand fw-bold" href="./index.html">Gutenbook</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,38 +59,34 @@ footer.innerHTML =  `
        <div class="row  text-md-left">
          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold ">Gutenbook</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi commodi libero sunt modi non odit reiciendis! Explicabo, inventore error ipsam tenetur debitis, dolor nobis accusamus, corporis blanditiis laborum sequi obcaecati?</p>
+            <p>"Mejorando día a día para ser la mejor librería del país"
+
+            </p>
            </div>
            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold">Libros</h5>
+              <h5 class="text-uppercase mb-4 font-weight-bold">Enlaces</h5>
               <p>
-                <a href="" class="text-white" style="text-decoration: none;">Libros</a>
+                <a href="./registro.html" class="text-white" style="text-decoration: none;">Inicio de sesión</a>
               </p>
               <p>
-                <a href="" class="text-white" style="text-decoration: none;">Libros</a>
-              </p>
-              <p>
-                <a href="" class="text-white" style="text-decoration: none;">Libros</a>
-              </p>
-              <p>
-                <a href="" class="text-white" style="text-decoration: none;">Libros</a>
+                <a href="./registroLibro" class="text-white" style="text-decoration: none;">Agregar libro</a>
               </p>
            </div>
 
             <div class="col-md-3 col-lg-2  col-xl-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold">Enlaces</h5>
+              <h5 class="text-uppercase mb-4 font-weight-bold">Mapa del sitio</h5>
               
               <p>
-                <a href="" class="text-white" style="text-decoration: none;">Libros</a>
+                <a href="./index.html" class="text-white" style="text-decoration: none;">Inicio</a>
               </p>
               <p>
-                <a href="" class="text-white" style="text-decoration: none;">Libros</a>
+                <a href="*/nosotros.html" class="text-white" style="text-decoration: none;">Nosotros</a>
               </p>
               <p>
-                <a href="" class="text-white" style="text-decoration: none;">Libros</a>
+                <a href="./contacto.html" class="text-white" style="text-decoration: none;">Contacto</a>
               </p>
               <p>
-                <a href="" class="text-white" style="text-decoration: none;">Libros</a>
+                <a href="./catalogo.html" class="text-white" style="text-decoration: none;">Catálogo</a>
               </p>
             </div>
 
@@ -115,7 +111,7 @@ footer.innerHTML =  `
             <div class="row justify-content-between">
               <div class="col-md-7 col-lg-8">
                 <p>Copyright &copy; 2023 Todos los derechos reservados.
-                  <a href="#" style="text-decoration: none;">
+                  <a href="./index.html" style="text-decoration: none;">
                     <p class="fw-semibold">Gutenbook</p>
                   </a>
                 </p>
@@ -124,13 +120,13 @@ footer.innerHTML =  `
               <div class="col-md-5 col-lg-4 text-center">
                 <div class="list-unstyled list-inline">
                   <li class="list-inline-item">
-                    <a href="" class="btn-floating btn-sm text-white" style="font-size: 1.5rem;"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.facebook.com" class="btn-floating btn-sm text-white" style="font-size: 1.5rem;"><i class="bi bi-facebook"></i></a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="" class="btn-floating btn-sm text-white" style="font-size: 1.5rem;"><i class="bi bi-github"></i></a>
+                    <a href="https://github.com/DanteContreras93/Gutenbook_front/tree/develop" class="btn-floating btn-sm text-white" style="font-size: 1.5rem;"><i class="bi bi-github"></i></a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="" class="btn-floating btn-sm text-white" style="font-size: 1.5rem;"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/" class="btn-floating btn-sm text-white" style="font-size: 1.5rem;"><i class="bi bi-linkedin"></i></a>
                   </li>
                 </div>
 

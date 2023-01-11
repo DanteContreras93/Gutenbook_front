@@ -7,7 +7,6 @@ Equipo `Introverdevs`
 
 ## Versión actual: 0.8
 
-```
 Se actualiza la página en base a las observaciones realizadas en la primera revisión.
 Se mejora la apariencia general y la implementación de efectos, así como mejor uso de bootstrap en general en todo el sitio.
 
@@ -15,7 +14,6 @@ Se utiliza un `JS` para el agregado de la barra de navegación, así como el foo
 
 Se implementa el uso de `catalogo.js` y `registroLibros.js` para el agregado de libros en el catálogo mediante el uso de `LocalStorage` .
 
-```
 ---
 
 > En construcción:
