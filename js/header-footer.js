@@ -19,7 +19,7 @@ header.innerHTML =  `
               <a class="nav-link" href="Contacto.html">Contactos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotos</a>
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
    
             <li class="nav-item dropdown">
@@ -34,16 +34,16 @@ header.innerHTML =  `
       
           </ul>
 
-          <form class="d-flex search-box">
-            <input class=" me-2 search-txt" type="search" placeholder="Buscar" aria-label="Search">
-            <a class="search-btn" href="#" >
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-          </form>
+          <form class="search-box mx-2" role="search">
+                  <input class="search-txt" type="search" placeholder="Buscar" arial-label="Search" >
+                    <a class="search-btn" href="#" Style="text-decoration: none;">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </a>
+              </form>
 
           <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="restro.html">Ingresar/Registrarse</a>
+              <a class="nav-link" aria-current="page" href="registro.html">Ingresar/Registrarse</a>
             </li>
           </ul>     
      
